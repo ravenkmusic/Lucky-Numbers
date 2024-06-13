@@ -20,7 +20,7 @@ export function twoSum(array1, array2) {
     console.log(sum);
     return sum;
   }
-  
+
   /**
    * Checks whether a number is a palindrome.
    *
@@ -47,3 +47,15 @@ export function twoSum(array1, array2) {
    * @param {string|null|undefined} input
    * @returns {string} error message
    */
+
+
+export function errorMessage(input) {
+    console.log(input);
+    if (!input){
+      return 'Required field'
+    } else if(!Number(input)) {
+      return 'Must be a number besides 0'
+    } else {
+      return ''
+    }
+  }
