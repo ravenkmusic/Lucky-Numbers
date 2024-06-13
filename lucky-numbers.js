@@ -20,3 +20,30 @@ export function twoSum(array1, array2) {
     console.log(sum);
     return sum;
   }
+  
+  /**
+   * Checks whether a number is a palindrome.
+   *
+   * @param {number} value
+   * @returns {boolean} whether the number is a palindrome or not
+   */
+  export function luckyNumber(value) {
+    let stringValue = String(value);
+    let valueArray = stringValue.split([]);
+    let reversedArray = valueArray.reverse();
+    let luckyNumber = reversedArray.join("");
+  
+    if (luckyNumber === stringValue){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  /**
+   * Determines the error message that should be shown to the user
+   * for the given input value.
+   *
+   * @param {string|null|undefined} input
+   * @returns {string} error message
+   */
