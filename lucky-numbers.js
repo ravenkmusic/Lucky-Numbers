@@ -50,7 +50,6 @@ export function twoSum(array1, array2) {
 
 
 export function errorMessage(input) {
-    console.log(input);
     if (!input){
       return 'Required field'
     } else if(!Number(input)) {
